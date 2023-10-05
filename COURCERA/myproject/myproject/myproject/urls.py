@@ -22,4 +22,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', views.home),
     path('', views.index),
+    path('drinks/<str:drink_name>', views.drinks, name="drink_name"),
 ]
