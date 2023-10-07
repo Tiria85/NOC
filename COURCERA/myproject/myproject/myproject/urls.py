@@ -16,10 +16,16 @@ Incluyendo otra URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from myapp import views
+from myapp.views import *  # Importa todas las funciones y variables
+import myapp.views as myapp  # Dale un alias al módulo completo
+
+from Little_Lemon.views import *
+import Little_Lemon.views as little
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.home),
-    path('', views.index),
+    path('home/', myapp.home),
+    path('', little.index),
+    path('index', myapp.index),
+    
 ]
