@@ -33,5 +33,7 @@ urlpatterns = [
     path('drinks/<str:drink_name>', little.drinks, name="drink_name"),
     path('menu/', little.menu, name="menu"),
     path('about/', little.about, name="about"),
-    path('book/', little.book, name="book")
+    path('book/', little.book, name="book"),
+
+    path('book/', myapp.Booking, name="Booking")
 ]
