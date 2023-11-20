@@ -1,0 +1,14 @@
+# codigos utiles 
+
+# python3 manage.py createsuperuser
+
+# python manage.py makemigrations generar las migraciones // crear modelo
+# python manage.py migrate // iniciala creacion de tablas
+
+# http://127.0.0.1:8000/
+# python manage.py runserver  // iniciar servidor desde manage.py
+
+# git pull // descargar y actualizar cambios del servidor GIT
+# git add . // Agregar cambios al área de preparación
+# git commit -m "COMENTARIO"  // Realizar el commit con un mensaje descriptivo
+# git push // subir cambios al servidor  
